@@ -25,5 +25,8 @@ To run your tests
 
 | Code Challenges | Name |
 | --- | ---- |
-| Code Challenges 01 | [Reverse Array ](https://github.com/) |
+| Code Challenges 01 | [Reverse Array ](https://github.com/HassanHamdanDev/data-structures-and-algorithms/tree/main/javascript/myCode-challenges-401/array-reverse) |
+| Code Challenges 02 | [array-insert-shift ](https://github.com/HassanHamdanDev/data-structures-and-algorithms/tree/main/javascript/myCode-challenges-401/array-insert-shift) |
+
+
 
