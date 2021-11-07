@@ -27,5 +27,18 @@ Define a method called toString which takes in no arguments and returns a string
 - [x] Will return false when searching for a value in the linked list that does not exist
 - [x] Can properly return a collection of all the values that exist in the linked list
 
+ - [x] Top-level README “Table of Contents” is updated
+ - [x] README for this challenge is complete
+       * [x] Summary, Description, Approach & Efficiency, Solution
+       * [x] Picture of whiteboard
+       * [x] Link to code
+ - [x] Feature tasks for this challenge are completed
+ - [x] Unit tests written and passing
+       * [x] “Happy Path” - Expected outcome
+       * [x] Expected failure
+       * [x] Edge Case (if applicable/obvious)
 
+## Whiteboard Process
+
+![image info](./insertions.png)
 
