@@ -37,8 +37,39 @@ Define a method called toString which takes in no arguments and returns a string
        * [x] “Happy Path” - Expected outcome
        * [x] Expected failure
        * [x] Edge Case (if applicable/obvious)
+       
+       
+
+## Big O:
+- append 
+    * time : O(n)
+    * space : O(1)
+- insert 
+    * time : O(n)
+    * space : O(1)
+- insertBefore 
+    * time : O(n)
+    * space : O(1)
+- insertAfter 
+    * time : O(n)
+    * space : O(1)
+- toString 
+    * time : O(n)
+    * space : O(1)
+- includes 
+    * time : O(n)
+    * space : O(1)
+- kthFromEnd 
+    * time : O(n)
+    * space : O(1)
+
 
 ## Whiteboard Process
 
 ![image info](./insertions.png)
 
+
+
+- kthFromEnd  UML 
+
+![image info](./kthFromEnd.png)

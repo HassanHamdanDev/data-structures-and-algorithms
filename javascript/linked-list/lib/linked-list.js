@@ -22,7 +22,7 @@ class LinkedList {
     }
 
     includes(value) {
-        if (!this.head) return false;
+        if (!this.head) return "empty LL";
         let checkNode = this.head;
         if (checkNode.value === value) return true;
         while (checkNode.next) {
@@ -103,6 +103,20 @@ class LinkedList {
             }
         }
         return "value not exist";
+    }
+
+    kthFromEnd(k) {
+        if (typeof k !== 'number' || k < 0 || !Number.isInteger(k)) return 'Exception not valid Number';
+        if (this.head) {
+            if (this.length === 1 && k === 0) return this.head.value;
+            if (k < this.length) {
+                let checkNode = this.head;
+                for (let i = 1; i < this.length - k; i++) {
+                    checkNode = checkNode.next;
+                }
+                return checkNode.value;
+            }
+        } return "Exception empty LL or more than the length";
     }
 }
 
