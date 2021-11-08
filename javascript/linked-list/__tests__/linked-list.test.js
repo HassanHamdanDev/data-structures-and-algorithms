@@ -20,6 +20,11 @@ describe('Linked List', () => {
     expect(list.head.next.value).toBe(1);
     expect(list.head.next.next).toBeNull();
   });
+  it('check if the LL contain specific Value', () => {
+    expect(list.includes(2)).toBe(true);
+    expect(list.includes(3)).toBe(false);
+    expect(newList.includes(3)).toBe('empty LL');
+  });
   it('make the linked list  string', () => {
     expect(list.toString()).toBe('{ 2 } -> { 1 } -> NULL');
   });
@@ -55,6 +60,28 @@ describe('linked-list-insertions', () => {
     newList.insertAfter(5, 12);
     expect(newList.toString()).toBe('{ 3 } -> { 10 } -> { 1 } -> { 5 } -> { 12 } -> { 4 } -> { 2 } -> { 11 } -> NULL');
     expect(newList.insertAfter(15, 15)).toBe('value not exist');
+  });
+});
+
+describe('kFromEnd', () => {
+  it(' find k value in a ll', () => {
+    expect(newList.kthFromEnd(0)).toEqual(11);
+    expect(newList.kthFromEnd(1)).toEqual(2);
+    expect(newList.kthFromEnd(2)).toEqual(4);
+    expect(newList.kthFromEnd(7)).toEqual(3);
+  });
+  it('find k value in a LL of a size 1', () => {
+    let testList = new LinkedList();
+    testList.append(3);
+    expect(testList.kthFromEnd(0)).toEqual(3);
+    expect(testList.kthFromEnd(1)).toEqual('Exception empty LL or more than the length');
+  });
+  it('Exception if the value is not valid', () => {
+    expect(newList.kthFromEnd(1.7)).toEqual('Exception not valid Number');
+    expect(newList.kthFromEnd(-1)).toEqual('Exception not valid Number');
+  });
+  it('Exception if the value is more than the length ', () => {
+    expect(newList.kthFromEnd(12)).toEqual('Exception empty LL or more than the length');
   });
 });
 
