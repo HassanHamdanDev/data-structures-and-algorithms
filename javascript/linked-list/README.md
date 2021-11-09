@@ -62,6 +62,9 @@ Define a method called toString which takes in no arguments and returns a string
 - kthFromEnd 
     * time : O(n)
     * space : O(1)
+- zipLists 
+    * time : O(n)
+    * space : O(n)
 
 
 ## Whiteboard Process
@@ -69,7 +72,10 @@ Define a method called toString which takes in no arguments and returns a string
 ![image info](./insertions.png)
 
 
-
 - kthFromEnd  UML 
 
 ![image info](./kthFromEnd.png)
+
+- zipLists UML 
+
+![image info](./zipLists.png)

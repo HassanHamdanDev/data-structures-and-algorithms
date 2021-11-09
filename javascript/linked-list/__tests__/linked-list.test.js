@@ -1,8 +1,11 @@
 'use strict';
 
 const LinkedList = require('../lib/linked-list');
+const zipLists = require('../index');
 let list = new LinkedList();
 let newList = new LinkedList();
+let emptyList = new LinkedList();
+
 
 
 describe('Linked List', () => {
@@ -85,5 +88,14 @@ describe('kFromEnd', () => {
   });
 });
 
+describe('Zip 2 LL', () => {
+  it('Zipped correct', () => {
+    expect(zipLists(list, newList).toString()).toBe('{ 2 } -> { 3 } -> { 1 } -> { 10 } -> { 1 } -> { 5 } -> { 12 } -> { 4 } -> { 2 } -> { 11 } -> NULL');
+    expect(zipLists(newList, list).toString()).toBe('{ 3 } -> { 2 } -> { 10 } -> { 1 } -> { 1 } -> { 5 } -> { 12 } -> { 4 } -> { 2 } -> { 11 } -> NULL');
+  });
+  it('accept empty LL', () => {
+    expect(zipLists(newList, emptyList).toString()).toEqual(newList.toString());
+  });
+});
 
 
