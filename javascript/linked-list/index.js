@@ -49,16 +49,41 @@ function zipLists(list1, list2) {
     return zippedLL;
 }
 
+
+function reverseList(list) {
+    let reversedLL = new LinkedList();
+    if (list.head) {
+        let currentNode = list.head;
+        for (let i = 0; i < list.length; i++) {
+            reversedLL.insert(currentNode.value);
+            currentNode = currentNode.next;
+        }
+        return reversedLL;
+    }
+    return "Empty LL";
+}
+
+
+
 linkedList2.append(11);
 linkedList2.append(12);
 linkedList2.append(13);
 linkedList2.append(14);
 let llString2 = linkedList2.toString();
 let checkZip = zipLists(linkedList, linkedList3);
+let reverseListtest = reverseList(linkedList);
+let reverseListtest2 = reverseList(linkedList2);
 
 console.log('=========================================');
-console.log(linkedList, check2, check3, llString, `value : ${valueof} `, ` length: ${linkedList.length}`);
+console.log(llString)
 console.log('=========================================');
+console.log(reverseListtest.toString());
+console.log('=========================================');
+console.log(llString2)
+console.log('=========================================');
+console.log(reverseListtest2.toString());
+
+console.log(linkedList, check2, check3, llString, `value : ${valueof} `, ` length: ${linkedList.length}`);
 console.log(llString2)
 console.log('=========================================');
 console.log(checkZip.toString());
@@ -66,4 +91,7 @@ console.log('length :', checkZip.length)
 console.log('=========================================');
 
 
-module.exports = zipLists;
+module.exports = {
+    zipLists,
+    reverseList
+};

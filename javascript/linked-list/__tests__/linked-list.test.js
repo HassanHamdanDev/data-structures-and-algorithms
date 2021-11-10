@@ -1,7 +1,7 @@
 'use strict';
 
 const LinkedList = require('../lib/linked-list');
-const zipLists = require('../index');
+const {zipLists} = require('../index');
 let list = new LinkedList();
 let newList = new LinkedList();
 let emptyList = new LinkedList();
