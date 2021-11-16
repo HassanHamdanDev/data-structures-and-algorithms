@@ -16,7 +16,7 @@ describe('PseudoQueue Test', () => {
     it('dequeue from PseudoQueue', () => {
         let value2 = 45;
         newPseudoQueue.enqueue(value2);
-        expect(newPseudoQueue.dequeue()).toEqual(45);
+        expect(newPseudoQueue.dequeue()).toEqual(23);
     });
 });
 

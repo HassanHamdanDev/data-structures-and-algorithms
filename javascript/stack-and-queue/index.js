@@ -1,36 +1,36 @@
 
 
 
-// const PseudoQueue = require('./stack-queue-pseudo/stack-queue-pseudo');
+const PseudoQueue = require('./stack-queue-pseudo/stack-queue-pseudo');
 
 const AnimalAhelter = require('./stack-queue-animal-shelter/stack-queue-animal-shelter');
 
 
-// let newPseudoQueue = new PseudoQueue();
+let newPseudoQueue = new PseudoQueue();
 
 
-// // newPseudoQueue.enqueue(10);
-// // newPseudoQueue.enqueue(11);
-// // newPseudoQueue.enqueue(12);
-// // newPseudoQueue.enqueue(13);
-// // newPseudoQueue.enqueue(14);
-// // newPseudoQueue.enqueue(15);
+newPseudoQueue.enqueue(10);
+newPseudoQueue.enqueue(11);
+newPseudoQueue.enqueue(12);
+newPseudoQueue.enqueue(13);
+newPseudoQueue.enqueue(14);
+newPseudoQueue.enqueue(15);
 
-// // console.log(newPseudoQueue);
+console.log(newPseudoQueue);
 
-// // let try1 = newPseudoQueue.dequeue();
-// // let try2 = newPseudoQueue.dequeue();
-// // let try3 = newPseudoQueue.dequeue();
+let try1 = newPseudoQueue.dequeue();
+let try2 = newPseudoQueue.dequeue();
+let try3 = newPseudoQueue.dequeue();
 
 
-// // console.log('===============================')
-// // console.log(try1)
-// // console.log('===============================')
-// // console.log(try2);
-// // console.log('===============================')
-// // console.log(try3);
-// // console.log('===============================')
-// // console.log(newPseudoQueue);
+console.log('===============================')
+console.log(try1)
+console.log('===============================')
+console.log(try2);
+console.log('===============================')
+console.log(try3);
+console.log('===============================')
+console.log(newPseudoQueue);
 
 
 

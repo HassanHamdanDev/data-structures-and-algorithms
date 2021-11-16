@@ -16,10 +16,13 @@ class PseudoQueue {
     }
     dequeue() {
         if (this.length === 0) return 'empty pseudoqueue';
+        if (this.front.isEmpty()) {
+            while (!this.rear.isEmpty()) {
+                this.front.push(this.rear.pop());
+            }
+        }
         this.length--;
-        return this.rear.pop();
+        return this.front.pop();
     }
 }
-
-
 module.exports = PseudoQueue;

@@ -8,7 +8,7 @@
 ## Approach & Efficiency
 
 - Enqueue: space O(1) -> time O(1).
-- Dequeue: space O(n) -> time O(n).
+- Dequeue: space O(1) -> time O(n).
 
 
 ![PseudoQueue](./PseudoQueue.png)
