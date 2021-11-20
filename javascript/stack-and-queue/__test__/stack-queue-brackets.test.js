@@ -14,5 +14,6 @@ describe('test validateBrackets ', () => {
         expect(validateBrackets(')(')).toBeFalsy();
         expect(validateBrackets('[({}]')).toBeFalsy();
         expect(validateBrackets('(](')).toBeFalsy();
+        expect(validateBrackets('{(})')).toBeFalsy();
     });
 });
