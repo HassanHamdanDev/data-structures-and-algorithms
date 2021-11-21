@@ -3,7 +3,7 @@
 class BinaryTree {
     constructor(root = null) {
         this.root = root;
-        this.length =0;
+        this.length = 0;
     }
 
     preOrder() {
@@ -44,6 +44,18 @@ class BinaryTree {
 
     isEmpty() {
         return this.root === null;
+    }
+
+    getMax() {
+        if (this.isEmpty()) return "The Binary Tree is Empty !"
+        let arrayTree = this.preOrder();
+        let maxValue = arrayTree[0];
+        arrayTree.forEach(elem => {
+            if (elem > maxValue) {
+                maxValue = elem;
+            }
+        });
+        return maxValue;
     }
 }
 

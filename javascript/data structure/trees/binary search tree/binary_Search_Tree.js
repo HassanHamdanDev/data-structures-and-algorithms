@@ -1,11 +1,12 @@
 'use strict';
 
 const Node = require('../lib/Node');
+const BinaryTree = require('../binary tree/binary_Tree');
 
 
-class BinarySearchTree {
+class BinarySearchTree extends BinaryTree {
     constructor(root = null) {
-        this.root = root;
+        super(root);
         this.length = 0;
     }
     add(value) {
