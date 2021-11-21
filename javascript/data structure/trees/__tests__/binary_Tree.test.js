@@ -44,4 +44,8 @@ describe('Binary Tree Test', () => {
         let postOrder = BT.postOrder();
         expect(postOrder).toEqual([10, 7, 8, 4, 16, 14, 12]);
     });
+    it(' Can successfully return a max value from Tree', () => {
+        let maxValue = BT.getMax();
+        expect(maxValue).toEqual(16);
+    });
 });

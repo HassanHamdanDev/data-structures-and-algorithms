@@ -16,6 +16,8 @@ Define a method for each of the depth first traversals:
 * post order which returns an array of the values, ordered appropriately.
 * Any exceptions or errors that come from your code should be semantic, capture-able errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went wrong in calling the methods you wrote for this lab.
 
+* Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
 - Binary Search Tree
 
 * Create a Binary Search Tree class
@@ -39,6 +41,8 @@ Returns: boolean indicating whether or not the value is in the tree at least onc
 - preOrder: space O(h)/time O(n)
 - inOrder: space O(h)/time O(n)
 - postOrder: space O(h)/time O(n)
+- getMax: space O(n)/time O(n)
+
 
 ### BinarySearchTree
 
@@ -55,3 +59,6 @@ Returns: boolean indicating whether or not the value is in the tree at least onc
 
 ![TEST](./BTtest.png)
 
+#### Get MAX WB :
+
+![TEST](./BTmax.png)
