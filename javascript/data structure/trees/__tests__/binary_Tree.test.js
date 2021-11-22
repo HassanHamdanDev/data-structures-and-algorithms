@@ -2,6 +2,8 @@
 
 const Node = require('../lib/Node');
 const BinaryTree = require('../binary tree/binary_Tree');
+const breadthFirst = require('../tree-breadth-first/tree-breadth-first');
+
 
 const BT = new BinaryTree();
 
@@ -47,5 +49,9 @@ describe('Binary Tree Test', () => {
     it(' Can successfully return a max value from Tree', () => {
         let maxValue = BT.getMax();
         expect(maxValue).toEqual(16);
+    });
+    it('return an array of all values in the tree, in the breadth first"', () => {
+        const allvalues = breadthFirst(BT);
+        expect(allvalues).toEqual([12, 8, 14, 10, 7, 4, 16]);
     });
 });

@@ -18,6 +18,8 @@ Define a method for each of the depth first traversals:
 
 * Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
 
+* Write a function called breadth first return list of all values in the tree, in the order they were encountered.
+
 - Binary Search Tree
 
 * Create a Binary Search Tree class
@@ -42,6 +44,7 @@ Returns: boolean indicating whether or not the value is in the tree at least onc
 - inOrder: space O(h)/time O(n)
 - postOrder: space O(h)/time O(n)
 - getMax: space O(n)/time O(n)
+- breadth: space O(n)/time O(n)
 
 
 ### BinarySearchTree
@@ -62,3 +65,7 @@ Returns: boolean indicating whether or not the value is in the tree at least onc
 #### Get MAX WB :
 
 ![TEST](./BTmax.png)
+
+#### breadthFirst WB:
+
+![TEST](./BTbreadthFirst.png)
