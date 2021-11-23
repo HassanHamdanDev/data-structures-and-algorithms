@@ -45,12 +45,15 @@ Returns: boolean indicating whether or not the value is in the tree at least onc
 - postOrder: space O(h)/time O(n)
 - getMax: space O(n)/time O(n)
 - breadth: space O(n)/time O(n)
+- fizzBuzzTree time O(n^2) and space O(n)
 
 
 ### BinarySearchTree
 
 - add(value): space O(1)/time O(n)
 - contain(value): space O(1)/time O(n)
+
+
 
 
 #### WB :
@@ -69,3 +72,9 @@ Returns: boolean indicating whether or not the value is in the tree at least onc
 #### breadthFirst WB:
 
 ![TEST](./BTbreadthFirst.png)
+
+#### fizzBuzzTree WB:
+
+![TEST](./fizzBuzzTree.png)
+
+
