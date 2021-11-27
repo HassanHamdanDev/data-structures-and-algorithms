@@ -34,7 +34,7 @@ class BinarySearchTree extends BinaryTree {
         _recursion(this.root);
     }
     contains(value) {
-        if (this.length === 0) return "Empty Tree !"
+        if (this.length === 0) return "Empty Tree !";
         let current = this.root;
         while (current) {
             if (value === current.value) {
