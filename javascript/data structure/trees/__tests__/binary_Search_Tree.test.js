@@ -42,3 +42,4 @@ describe('Binary Search Tree Test', () => {
         expect(newTree.contains(7)).toBe("Empty Tree !");
     });
 });
+
