@@ -1,5 +1,8 @@
 'use strict';
 
+const HashTable = require('./hashtable');
+
+
 const repeatedWord = require('./hashmap-repeated-word/hashmap-repeated-word');
 
 let stringOne = "Once upon a time, there was a brave princess who...";
@@ -17,4 +20,48 @@ console.log(try2);
 console.log(try3);
 console.log(try4);
 
+let stringFive = 'In a galaxy far far away';
+let stringsix = 'Taco cat ate a taco';
+let stringseven = 'No. Try not. Do or do not. There is no try.';
+
+function mostWord(str) {
+    let strArray = str.toLowerCase().match(/\w+/g);
+    const strHashMap = new HashTable(strArray.length);
+
+    let counter = 1;
+    let mostCommon;
+    let tempCount = 0;
+
+    for (let i = 0; i < strArray.length; i++) {
+        if (strHashMap.contains(strArray[i])) {
+            strHashMap.add(strArray[i], counter++);
+            if (Number(strHashMap.get(strArray[i])) >= tempCount) {
+                tempCount = Number(strHashMap.get(strArray[i]).tail)
+                mostCommon = strArray[i];
+            }
+        }
+        strHashMap.add(strArray[i], counter);
+    }
+    return mostCommon ? mostCommon : 'No common Words';
+}
+
+console.log(mostWord(stringFive));
+console.log(mostWord(stringsix));
+console.log(mostWord(stringseven));
+console.log(mostWord(stringFour));
+
+function uniqueChar(str) {
+    let strArray = str.toLowerCase().replace(/[ ,.]/g, '').split('');
+
+    const strHashMap = new HashTable(strArray.length);
+    for (let i = 0; i < strArray.length; i++) {
+        if (strHashMap.contains(strArray[i])) {
+            return false;
+        }
+        strHashMap.add(strArray[i], strArray[i]);
+    }
+    return true;
+}
+
+console.log(uniqueChar('Donald the duck'))
 

@@ -10,7 +10,7 @@ class HashTable {
     }
 
     getHash(key) {
-        const assciMulti = key.split('').reduce((p, n) => p * n.charCodeAt(0), 0);
+        const assciMulti = key.split('').reduce((p, n) => p + n.charCodeAt(0), 0);
         const withPrime = assciMulti * 599;
         return withPrime % this.size;
     }

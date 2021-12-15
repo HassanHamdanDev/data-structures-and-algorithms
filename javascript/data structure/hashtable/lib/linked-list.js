@@ -21,15 +21,15 @@ class LinkedList {
         this.length += 1;
     }
 
-    // values() {
-    //     let values = [];
-    //     let current = this.head;
-    //     while (current) {
-    //         values.push(current.value);
-    //         current = current.next;
-    //     }
-    //     return values;
-    // }
+    values() {
+        let values = [];
+        let current = this.head;
+        while (current) {
+            values.push(current.value);
+            current = current.next;
+        }
+        return values;
+    }
 }
 
 module.exports = LinkedList;
